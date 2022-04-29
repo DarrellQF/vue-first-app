@@ -1,32 +1,19 @@
 <template>
-	<ion-page>
-			<ion-header>
-				<ion-toolbar>
-					<ion-title>All Memories</ion-title>
-				</ion-toolbar>
-			</ion-header>
-			<ion-content>
+	<base-layout pageTitle="All Mems">
 				<ion-list>
-					<ion-item>Max</ion-item>
-					<ion-item>Manuel</ion-item>
-					<ion-item>Julie</ion-item>
-					<ion-item>George</ion-item>
+					<ion-item router-link="/memories/1">A trip into the mountains</ion-item>
+					<ion-item>Surfing in the seas</ion-item>
+					<ion-item>Good eating places</ion-item>
 				</ion-list>
-			</ion-content>
-	</ion-page>
+	</base-layout>
 </template>
 
 <script>
-import {IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem} from '@ionic/vue';
+import {IonList, IonItem} from '@ionic/vue';
 export default {
     components : {
-        IonPage,
-        IonHeader,
-        IonToolbar,
-        IonTitle,
-        IonContent,
 				IonList,
-				IonItem
+				IonItem,
     }
 
 }
