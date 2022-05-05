@@ -16,7 +16,7 @@ export default {
     components : {
         IonItem,
         IonImg,
-        IonThumbnail,
+        IonThumbnail, 
         IonLabel,
     }
 }
