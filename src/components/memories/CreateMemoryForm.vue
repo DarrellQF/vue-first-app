@@ -1,8 +1,5 @@
 <template>
-  <base-layout page-title="Add a Memory" page-default-back-link="/memories">
-    <h2>Add a memory</h2>
-
-    <form class="ion-padding">
+      <form class="ion-padding">
         <ion-list>
             <ion-item>
                 <ion-label position="floating">Title</ion-label>
@@ -19,15 +16,13 @@
                 <ion-button expand="full" >Save</ion-button>
         </ion-list>
     </form>
-
-  </base-layout>
 </template>
 
 <script>
 import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton} from '@ionic/vue'
-import BaseLayout from '../components/base/BaseLayout.vue';
 export default {
-  components: { BaseLayout , IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton},
+      components: { BaseLayout , IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton},
+
 }
 </script>
 
