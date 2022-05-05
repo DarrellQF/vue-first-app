@@ -109,6 +109,48 @@ wrapped Ion-img in ion thumbnail component that comes with predifined slots. set
 
 
 
+## VUEX
+
+install vuex using npm
+
+`npm install vuex@next`
+
+create a store folder and an index.js file inside. 
+
+in index.js
+
+import createStore from vuex
+
+create a s const store using the createStore() method
+
+export store. 
+in main.js we need to tac on .use(store) to our create app method 
+
+``` javascript
+const app = createApp(App)
+  .use(IonicVue)
+  .use(router)
+  .use(store);
+```
+
+
+## adding data to the store
+
+pass an object to the createStore();
+
+Object is {
+
+a store that returns our stored data. in our case the hard coded memores. 
+Then we will set the getters so that all components have access to a vuex data. 
+
+for all our getters, which can be named anything we pass into them our state.
+then return either the data. e.g. `return state.data` or return a function which whose parameter can no interact with the state. 
+
+}
+
+
+
+
 
    
 
