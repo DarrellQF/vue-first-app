@@ -70,7 +70,8 @@ return : memories array of objects.
 
 with dummy data
 
-``` {{ 
+``` javascript 
+{ 
     id: "m1",
     image: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
     title: "A trip into the mountains",
@@ -87,12 +88,24 @@ with dummy data
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cuisine_of_Malaysia_01.jpg/800px-Cuisine_of_Malaysia_01.jpg",
     title: "Good eating places",
     description: "really tasty"
-} }```
-
+} 
+```
 
 
 Now generate that data dynamically by looping through each memory, setting the the the dynamic url to the ID. dont forget to bind the key so each iteration is unique, using ;key="id".
 lastly out put the title as the content of each list item. 
+
+Use Ion image component - lazy loaded with other stuff. 
+`<ion-img :src="memory.image" :alt="memory.title"></ion-img>`
+
+BETTER IMAGE STYLING
+import IonThumbnail, IonLabel
+
+Note- local images must be stored in public folder with relative urls NOT Prepended by public
+
+wrapped Ion-img in ion thumbnail component that comes with predifined slots. set slot to start `slot="start"` to 
+
+
 
 
 
