@@ -152,6 +152,15 @@ then return either the data. e.g. `return state.data` or return a function which
 
 
 
+## need to add here.... 
+- adding mutations and actions to our vuex data
+- setting up a form with 2 way binding.
+
+
+
+
+
+
    
 
 
